@@ -36,7 +36,7 @@ class BagDescriptor:
 
 if __name__ == "__main__":
 
-    files = load_data('../../1/data')
+    files = load_data('../../../1/data')
 
     descriptors = []
     k = 0
@@ -72,3 +72,5 @@ if __name__ == "__main__":
     print_to_arff("out.arff", bagDescriptors.values(), allClasses)
 
     print "hello"
+
+    # weka.classifiers.functions.SMO -C 10.0 -L 0.1 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0"
