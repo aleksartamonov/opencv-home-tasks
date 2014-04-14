@@ -12,6 +12,7 @@ class Descriptor:
         self.kp = kp
         self.des = des
         self.filename = filename
+        self.class_ = filename.split('/')[-2]
 
 
 files = reader.load_data('../data')
