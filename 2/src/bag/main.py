@@ -1,7 +1,7 @@
 __author__ = 'aleksart'
 
 
-from reader import load_data
+import reader
 import random
 import numpy as np
 import cv2
@@ -36,7 +36,7 @@ class BagDescriptor:
 
 if __name__ == "__main__":
 
-    files = load_data('../../../1/data')
+    files = reader.load_data('../../../1/data')
 
     descriptors = []
     k = 0
@@ -69,7 +69,7 @@ if __name__ == "__main__":
         else:
             bagDescriptors[key].beans[temp_label] += 1
 
-    print_to_arff("out.arff", bagDescriptors.values(), allClasses)
+    print_to_arff("out2.arff", bagDescriptors.values(), allClasses)
 
     print "hello"
 

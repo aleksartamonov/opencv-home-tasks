@@ -16,7 +16,7 @@ def load_data(path):
 
 
 if __name__ == "__main__":
-    data = load_data('../data')
+    data = load_data('../../../1/data')
     print len(data)
 
 
